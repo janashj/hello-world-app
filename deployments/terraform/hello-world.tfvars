@@ -1,0 +1,5 @@
+google_project_id       = "crested-acumen-315805"
+google_bucket_name      = "janashj-bucket-1234"
+deployment_environment  = "dev"
+deployment_name         = "hello-world"
+credentials             = "fuchicorp-service-account.json"
