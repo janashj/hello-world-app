@@ -15,7 +15,7 @@ variable "deployment_name" {
     description = "- (Optional) The name of the deployment."
 }
 variable "deployment_environment" {
-    default = "qa"
+    default = "dev"
     description = "- (Optional) The name of the deployment."
 }
 variable "deployment_endpoint" {

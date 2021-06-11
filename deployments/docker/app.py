@@ -16,10 +16,10 @@ def comming_soon():
         'message': 'This is comming soon page!!'
     })
 
-@app.route('/janarajorobaeva')
-def comming_soon():
-    return jsonify({
-        'message': 'This is Janara Jorobaeva, welcome a board!!'
-    })
+# @app.route('/janarajorobaeva')
+# def comming_soon():
+#     return jsonify({
+#         'message': 'This is Janara Jorobaeva, welcome a board!!'
+#     })
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
