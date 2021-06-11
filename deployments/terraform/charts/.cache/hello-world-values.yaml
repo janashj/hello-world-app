@@ -17,20 +17,20 @@ service:
   type: ClusterIP
   port: 80
 
-iingress:
+ingress:
   enabled: true
   annotations:
     kubernetes.io/ingress.class: nginx
     cert-manager.io/cluster-issuer: letsencrypt-prod
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: dev.hello.janarasjorobaevas.net
+    - host: qa.hello.janarasjorobaevas.net
       paths:
       - '/'
   tls:
   - secretName: chart-example-tls
     hosts:
-      - dev.hello.janarasjorobaevas.net
+      - qa.hello.janarasjorobaevas.net
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious

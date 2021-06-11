@@ -9,15 +9,16 @@ module "helm_deploy" {
   }          
 }
 
-
 variable "deployment_name" {
     default = "hello-world"
     description = "- (Optional) The name of the deployment."
 }
+
 variable "deployment_environment" {
     default = "dev"
     description = "- (Optional) The name of the deployment."
 }
+
 variable "deployment_endpoint" {
     type = "map"
     default = {
@@ -26,8 +27,9 @@ variable "deployment_endpoint" {
         prod    = "hello"
         stage   = "stage.hello"
     }
-    description = "- (Optional) The endpooint of the deployment."
+    description = "- (Optional) The endpoint of the deployment."
 }
+
 variable "google_domain_name" {
   default = "janarasjorobaevas.net"
 }
