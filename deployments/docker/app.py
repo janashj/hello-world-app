@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return jsonify({
-        'message': 'hello, I am devops, nice to meet you, happy debugging after school',
+        'message': 'hello, I am devops, nice to meet you, ENjoy your night debuggings ;) !',
         'environment': os.environ.get('ENVIRONMENT'),
         'owner': 'janashj',
         'namespace': os.environ.get('NAMESPACE')
@@ -21,6 +21,12 @@ def jorobaeva():
 def comming_soon():
     return jsonify({
         'message': 'This is comming soon page!!'
+    })
+
+@app.route('/qa')
+def qa_page():
+    return jsonify({
+        'message': 'This is QAs page!!'
     })
 
 if __name__ == '__main__':
