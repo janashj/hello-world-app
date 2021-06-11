@@ -11,8 +11,8 @@ def hello_world():
         'namespace': os.environ.get('NAMESPACE')
     })
 
-@app.route('/janarajorobaeva')
-def comming_soon():
+@app.route('/jorobaeva')
+def jorobaeva():
     return jsonify({
         'message': 'This is Janara Jorobaeva, welcome a board!!'
     })
