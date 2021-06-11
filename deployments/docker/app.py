@@ -11,11 +11,11 @@ def hello_world():
         'namespace': os.environ.get('NAMESPACE')
     })
 
-@app.route('/janarajorobaeva')
-def comming_soon():
-    return jsonify({
-        'message': 'This is Janara Jorobaeva, welcome a board!!'
-    })
+# @app.route('/janarajorobaeva')
+# def comming_soon():
+#     return jsonify({
+#         'message': 'This is Janara Jorobaeva, welcome a board!!'
+#     })
 
 @app.route('/soon')
 def comming_soon():
